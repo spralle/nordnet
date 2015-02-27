@@ -26,6 +26,6 @@
     "node-rsa": "^0.2.13",
     "request": "^2.53.0",
     "request-promise": "^0.4.0",
-    "ursa-purejs": "0.0.1"
+    "url-parse": "^1.0.0"
   }
 }
