@@ -1,0 +1,31 @@
+{
+  "name": "nordnet-api",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test --recursive",
+    "coverage": "istanbul cover node_modules/mocha/bin/_mocha -- --recursive test -u exports -R spec",
+    "coverage-start": "istanbul cover node_modules/mocha/bin/_mocha test --recursive -- -u exports -R spec && start coverage/lcov-report/index.html",
+    "jshint": "jshint ./lib",
+    "jscs": "jscs -p google ./lib",
+    "watchify": "watchify app/app.js -o app/bundle.js -v -d"
+  },
+  "devDependencies": {
+    "browserify": "^8.1.1",
+    "istanbul": "^0.3.2",
+    "jshint": "^2.5.10",
+    "mocha": "^2.0.1",
+    "should": "^4.1.0",
+    "watchify": "^2.2.1"
+  },
+  "author": "Andreas Karlsson",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^2.9.12",
+    "node-rsa": "^0.2.13",
+    "request": "^2.53.0",
+    "request-promise": "^0.4.0",
+    "ursa-purejs": "0.0.1"
+  }
+}
